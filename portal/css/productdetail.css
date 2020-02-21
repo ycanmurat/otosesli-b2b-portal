@@ -1,0 +1,256 @@
+.product-detail-info {
+	box-shadow: 0px 2px 20px #00000066;
+}
+
+.product-detail-info h3 {
+	color: #344d82;
+	font-weight: 400;
+	font-size: 1.4rem;
+	padding: 8px 0px 6px 23px;
+}
+
+
+
+div.product-detail img {
+	/* max-height: 500px; */
+	margin: auto;
+}
+div.product-detail table td {
+	border: none;
+	padding: 6px 25px;
+}
+
+div.product-detail table {
+	width: 100%;
+	margin: 20px 0px;
+}
+
+div.product-detail table tr td:nth-child(odd) {
+	font-weight: 500;
+}
+
+img.img-box-modal {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 45px;
+}
+
+.protuct-detail-image-box {
+	position: relative;
+	box-shadow: 0px 2px 20px #00000066;
+}
+.product-detail {
+	padding: 0px 75px;
+}
+
+img.pro-detail-modal {
+	position: absolute;
+	/* top: 0; */
+	right: 25px;
+	bottom: 40px;
+	width: 50px;
+}
+.firsat-badge-detail {
+	position: absolute;
+	font-size: 24px;
+	margin-top: 25px;
+	background-color: #4869ae;
+	padding: 0px 24px;
+	color: white;
+	font-weight: 300;
+	left: -6px;
+}
+
+.firsat-badge-detail:before {
+	width: 0;
+	height: 0;
+	border-top: 0px solid transparent;
+	border-left: 20px solid #4869ae;
+	border-bottom: 20px solid transparent;
+	position: absolute;
+	right: -20px;
+	content: '';
+	top: 0;
+}
+
+.firsat-badge-detail:after {
+	width: 0;
+	height: 0;
+	border-top: 20px solid transparent;
+	border-left: 20px solid #4869ae;
+	border-bottom: 0px solid transparent;
+	position: absolute;
+	right: -20px;
+	content: '';
+	bottom: 0;
+}
+
+div.firsat-badge-detail span:before {
+	position: absolute;
+	content: '';
+	height: 0;
+	width: 0;
+	left: 0;
+	bottom: -6px;
+	border-top: 0px solid transparent;
+	border-right: 6px solid #25468b;
+	border-bottom: 6px solid transparent;
+}
+
+img.product-img {
+	height: auto;
+	width: 100%;
+	padding: 35px;
+	max-width: 600px;
+}
+
+.detail-charge p:nth-child(1) {
+	color: red;
+	font-size: 15px;
+}
+
+.detail-charge p:nth-child(2) {
+	text-decoration: line-through;
+}
+
+.detail-charge p:nth-child(3) {
+	color: #48b3e3;
+	font-size: 2.2rem;
+}
+
+.detail-charge p {
+	display: inline-block;
+	margin: 0px 10px;
+}
+
+.detail-charge {
+	width: 100%;
+	text-align: right;
+}
+
+div.pd-info-footer a {
+	background-color: gray;
+	width: 100%;
+	text-align: center;
+	padding: 8px 0px;
+	border-right: 1px solid #000000a1;
+	font-size: 19px;
+}
+
+div.borderless a {
+	border: none;
+}
+
+
+div.pd-info-footer a i {color: #ededed;transition: all ease 0.3s;}
+
+div.pd-info-footer a:hover i {
+	color: #00aeef;
+	transition: all ease 0.3s;
+}
+
+div.product-comment div.tab-pane table td {
+	border-bottom: 1px solid gray;
+	padding: 8px;
+}
+
+
+div.product-comment ul.nav-tabs {
+	border: none;
+}
+
+div.product-comment ul.nav-tabs li {
+	border: none;
+	/* margin: 0; */
+	border-color: transparent;
+}
+
+div.product-comment ul.nav-tabs li a {
+	border: 2px solid transparent;
+	background-color: #4869ae;
+	border-radius: 0;
+	padding: 10px 0px;
+	margin-right: 9px;
+	color: white;
+	font-size: 13px;
+	font-weight: 300;
+	border-bottom: 2px #efefef;
+}
+
+.product-comment {
+	padding: 30px 107px;
+}
+
+div.product-comment div.tab-pane table {
+	width: 85%;
+}
+
+div.product-comment ul.nav-tabs li:last-child a {
+	margin-right: 0px;
+}
+
+
+div.product-comment ul.nav-tabs li a.active {
+	/* transition: all cubic-bezier(0.4, 0, 1, 1) 0.3s; */
+	border: 2px solid #f5f5f5;
+	border-top: 2px solid #4869ae;
+	color: #4869ae;
+	font-weight: 500!important;
+	background-color: whitesmoke;
+}	
+
+div.product-comment ul.nav-tabs li a.nav-link:hover {
+	border: 2px solid transparent;
+	border-bottom: 0px;
+}
+
+div.product-comment ul.nav-tabs li a.active:hover {
+	border-top: 2px solid #4869ae;
+	border-bottom: 2px solid transparent;
+}
+
+div.product-comment div.tab-pane {
+	background-color: whitesmoke;
+	padding: 5px;
+}
+
+div.product-comment div.tab-pane table tr:last-child td {
+	border: none;
+}
+
+div.product-comment div.tab-pane table td:nth-child(odd) {
+	font-weight: bold;
+	max-width: 170px;
+}
+
+div.product-comment table tr td strong {
+	color: red;
+}
+
+div.product-comment table tr td b {
+	color: #ff4400;
+}
+
+.update-back-button {text-align: center;}
+
+div.update-back-button a {
+	transition: all ease 0.3s;
+	margin: 15px 16px 40px;
+	display: inline-block;
+	padding: 10px 25px;
+	color: white;
+	font-weight: 400;
+	font-size: 14px;
+	border-radius: 6px;
+	background-image: radial-gradient( circle, #0d0d0d87, #282828c7);
+	box-shadow: 0px 5px 20px #0000008f;
+}
+
+div.update-back-button a:first-child:hover {transition: all ease 0.3s;background-image: radial-gradient( circle, #0c6f26, #42c540);box-shadow: 0px 5px 20px #0d9f148f;}
+
+div.update-back-button a:last-child:hover {
+	transition: all ease 0.3s;
+	background-image: radial-gradient( circle, #bd5902, #ffb04f);
+	box-shadow: 0px 5px 20px #ffa91e8f;
+}

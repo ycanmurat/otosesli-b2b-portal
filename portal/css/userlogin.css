@@ -1,0 +1,252 @@
+*{
+	font-family: 'Roboto', sans-serif;
+}
+
+body{
+	background: linear-gradient(rgba(247, 251, 255, 0.89),rgba(255, 255, 255, 0.87)), url(../images/girisbg.jpg) 14% 32%;
+	background-repeat: repeat;
+	font-family: 'Roboto', sans-serif;
+}
+div.loginPage {
+
+	text-align: center;
+
+	padding-bottom: 3%;
+}
+div.loginPage img{
+	margin: 60px auto;
+	max-width: 34%;
+	margin-bottom: 40px;
+}
+
+* { box-sizing:border-box; }
+
+/* basic stylings ------------------------------------------ */
+div.group input 				{
+	font-size:18px;
+	padding: 15px 10px 15px 5px;
+	display:block;
+	width: 100%;
+	border:none;
+	border-bottom:1px solid #757575;
+	border-radius: 44px;
+	padding-left: 17px;
+	overflow: hidden;
+	background-color: #616060d1;
+	color: white;
+}
+input:focus { outline:none; }
+
+/* LABEL ======================================= */
+div.group label 				 {
+	color: #fffefe;
+	font-size:18px;
+	font-weight:normal;
+	position:absolute;
+	pointer-events:none;
+	left: 21px;
+	top: 12px;
+	transition:0.2s ease all;
+	-moz-transition:0.2s ease all;
+	-webkit-transition:0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label {
+	top: -20px;
+	font-size: 15px;
+	color: #5264AE;
+	font-weight: 500;
+}
+/* BOTTOM BARS ================================= */
+.bar 	{ position:relative; display:block; width:300px; }
+.bar:before, .bar:after 	{
+	content:'';
+	height:2px; 
+	width:0;
+	bottom:1px; 
+	position:absolute; 
+	transition:0.2s ease all; 
+	-moz-transition:0.2s ease all; 
+	-webkit-transition:0.2s ease all;
+}
+.bar:before {
+	left: 62.4%;
+}
+.bar:after {
+	right: 33%;
+}
+
+/* active state */
+div.group input:focus ~ .bar:before, input:focus ~ .bar:after {
+	width: 62%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+	position:absolute;
+	height:60%;
+	width:100px;
+	top:25%;
+	left: 0px;
+	pointer-events:none;
+	opacity:0.5;
+}
+.group 			  {
+	position:relative;
+	margin-bottom:45px;
+	margin: auto;
+	width: 33%;
+	margin: 20px auto;
+}
+
+/* active state */
+input:focus ~ .highlight {
+	-webkit-animation:inputHighlighter 0.3s ease;
+	-moz-animation:inputHighlighter 0.3s ease;
+	animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+
+
+div.loginPage div.idPass input:focus input::placeholder{
+	background-color: white;
+	box-shadow: none;
+	border: 1px solid gray;
+	color: black;
+}
+
+div.idPass span {
+	position: absolute;
+	text-align: center;
+	left: 35%;
+	line-height: 19px;
+	width: 0%;
+	white-space: nowrap;
+	overflow: hidden;
+	transition: all ease 1s;
+}
+
+div.altinput input{
+	display: inline-block;
+	height: 18px;
+	width: 18px;
+	position: relative;
+	top: 2px;
+	cursor: pointer;
+}
+
+.altinput {
+	margin-top: 32px;
+}
+
+div.altinput a {
+	margin-right: 0px;
+	color: #1e348c;
+	font-size: 17px;
+	font-weight: 400;
+	margin-left: 44px;
+}
+
+div.altinput label {
+	margin-right: 0%;
+	position: relative;
+	top: 0px;
+	font-size: 17px;
+	font-weight: 400;
+	cursor: pointer;
+}
+
+div.altinput a:hover {
+	color: #2e86ea;
+	font-weight: 400;
+}
+
+
+div.loginPage form button {
+	transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
+	border: none;
+	width: 32%;
+	line-height: 38px;
+	border-radius: 50px;
+	background-color: #00acee8c;
+	color: #fff;
+	font-family: Roboto;
+	font-weight: 400;
+	font-size: 18px;
+	padding: 6px;
+	outline: none;
+}
+
+div.loginPage form button:hover {
+	transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
+	background-color: #4e87bcc2;
+}
+
+div.loginPage p {
+	margin: 20px auto;
+	color: black;
+	font-size: 17px;
+	font-weight: 300;
+}
+
+div.loginPage p b a {
+	color: black;
+	font-weight: bold;
+}
+
+div.loginPage p b a:hover {
+	color: #15b2f0;
+}
+
+div.Copyright p {
+	text-align: center;
+	margin: 0 auto;
+	font-size: 15px;
+	color: #3072b0;
+	font-weight: 400;
+}
+
+.loginPageSocial {width: 100%;}
+
+div.Copyright {
+	width: 100%;
+}
+
+
+
+.loginPageSocial a i {
+	color: #3072b0;
+	width: 30px;
+	height: 30px;
+	border: 1px solid #3072b0;
+	line-height: 30px;
+	border-radius: 30px;
+	margin: 15px 10px;
+
+}
+
+.loginPageSocial a i:hover {
+	color: #68c6ec;
+	border: 1px solid #68c6ec;
+}
+
+@media  screen and (max-width: 768px){
+	div.group{width: 60%}
+	div.loginPage img{max-width: 75%}
+	div.loginPage div.idPass input{width: 75%;}
+	div.altinput a{margin-left: 23px;}
+	div.loginPage p:nth-child(2){display: none;}
+	div.loginPage form button{width:60%;}
+}
+
+.uyari {
+	display: block;
+	width: 150px;
+	margin: 0 auto;
+	line-height: 40px;
+	background-color: #ff7300;
+	margin-top: 18px;
+	border-radius: 9px;
+}
